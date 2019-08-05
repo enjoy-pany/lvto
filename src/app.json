@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/trace/main",
+    "pages/logs/main",
+    "pages/counter/main",
+    "pages/my/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+
+    "list": [{
+      "text": "印记",
+      "pagePath": "pages/trace/main",
+      "iconPath": "static/tabs/jiaoyin.png",
+      "selectedIconPath": "static/tabs/jiaoyin_active.png"
+    }, {
+      "text": "风景",
+      "pagePath": "pages/logs/main",
+      "iconPath": "static/tabs/fengjing.png",
+      "selectedIconPath": "static/tabs/fengjing_active.png"
+    }, {
+      "text": "我的",
+      "pagePath": "pages/my/main",
+      "iconPath": "static/tabs/my.png",
+      "selectedIconPath": "static/tabs/my_active.png"
+    }],
+    "position": "bottom"
+  }
+}
