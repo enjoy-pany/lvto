@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       msg: true,
       list: [
@@ -64,14 +64,14 @@ export default {
     }
   },
   methods: {
-    goDetail (eve) {
+    goDetail(eve) {
       let _id = eve.target.id
       if (_id) {
         this.$router.push({ path: '/detail?id=' + _id })
       }
     }
   },
-  mounted () {
+  mounted() {
     // this.$http.get("../../../static/mock/trace.json").then(
     //   res => {
     //     this.list = res.data;

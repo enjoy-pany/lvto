@@ -58,7 +58,7 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       userInfo: {
         name: 'Pany',

@@ -1,8 +1,7 @@
 {
   "pages": [
     "pages/trace/main",
-    "pages/logs/main",
-    "pages/counter/main",
+    "pages/scape/hot/main",
     "pages/my/main"
   ],
   "window": {
@@ -24,7 +23,7 @@
       "selectedIconPath": "static/tabs/jiaoyin_active.png"
     }, {
       "text": "风景",
-      "pagePath": "pages/logs/main",
+      "pagePath": "pages/scape/hot/main",
       "iconPath": "static/tabs/fengjing.png",
       "selectedIconPath": "static/tabs/fengjing_active.png"
     }, {
