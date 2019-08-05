@@ -102,14 +102,6 @@ let baseWebpackConfig = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[ext]')
         }
-      },
-      {
-        test: /\.less$/,
-        loader: 'style-loader!css-loader!less-loader'
-      },
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },

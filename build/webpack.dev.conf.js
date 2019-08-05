@@ -4,7 +4,6 @@ var config = require('../config')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 // var HtmlWebpackPlugin = require('html-webpack-plugin')
-var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 var MpvueVendorPlugin = require('webpack-mpvue-vendor-plugin')
 
@@ -19,7 +18,7 @@ var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 //   baseWebpackConfig.entry[name] = ['./build/dev-client'].concat(baseWebpackConfig.entry[name])
 // })
 
-var webpackConfig =  merge(baseWebpackConfig, {
+module.exports = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.dev.cssSourceMap,
@@ -84,10 +83,3 @@ var webpackConfig =  merge(baseWebpackConfig, {
     new FriendlyErrorsPlugin()
   ]
 })
-var useUglifyJs = process.env.PLATFORM !== 'swan'
-if (useUglifyJs) {
-  webpackConfig.plugins.push(new UglifyJsPlugin({
-    sourceMap: true
-  }))
-}
-module.exports = webpackConfig
